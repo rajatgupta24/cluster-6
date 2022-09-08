@@ -31,8 +31,8 @@ spec:
       enabled: false
       production: false
   pipelineUser:
-    username: rajatgupta24
     email: rajat2411gupta@gmail.com
+    username: rajatgupta24
   repository: bucketrepo
   secretStorage: vault
   vault: {}
