@@ -20,4 +20,4 @@ spec:
                 port:
                   number: 80
             path: "/hook"
-      host: hook.jx.change.me
+      host: f0cd-2405-201-4015-3077-82cc-3309-64e1-db27.ngrok.io
