@@ -1,17 +1,17 @@
-# Source: jx-pipelines-visualizer/templates/deployment.yaml
+# Source: jx-ui/templates/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jx-pipelines-visualizer
+  name: jx-ui
   labels:
-    app.kubernetes.io/name: jx-pipelines-visualizer
-    app.kubernetes.io/instance: "jx-pipelines-visualizer"
-    helm.sh/chart: jx-pipelines-visualizer-1.8.2
-    app.kubernetes.io/version: "1.8.2"
+    app.kubernetes.io/name: jx-ui
+    app.kubernetes.io/instance: "jx-ui"
+    helm.sh/chart: jx-ui-0.0.12
+    app.kubernetes.io/version: "0.0.12"
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
-    meta.helm.sh/release-name: 'jx-pipelines-visualizer'
+    meta.helm.sh/release-name: 'jx-ui'
     wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
 spec:
@@ -19,20 +19,20 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app.kubernetes.io/name: jx-pipelines-visualizer
-      app.kubernetes.io/instance: "jx-pipelines-visualizer"
+      app.kubernetes.io/name: jx-ui
+      app.kubernetes.io/instance: "jx-ui"
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: jx-pipelines-visualizer
-        app.kubernetes.io/instance: "jx-pipelines-visualizer"
-        helm.sh/chart: jx-pipelines-visualizer-1.8.2
-        app.kubernetes.io/version: "1.8.2"
+        app.kubernetes.io/name: jx-ui
+        app.kubernetes.io/instance: "jx-ui"
+        helm.sh/chart: jx-ui-0.0.12
+        app.kubernetes.io/version: "0.0.12"
         app.kubernetes.io/managed-by: "Helm"
     spec:
       containers:
-      - name: jx-pipelines-visualizer
-        image: "ghcr.io/jenkins-x/jx-pipelines-visualizer:1.8.2"
+      - name: jx-ui
+        image: "ghcr.io/jenkins-x/jx-ui:0.0.12"
         args:
         - -resync-interval
         - 60s
@@ -62,7 +62,7 @@ spec:
             memory: 128M
       securityContext:
         fsGroup: 1000
-      serviceAccountName: jx-pipelines-visualizer
+      serviceAccountName: jx-ui
       enableServiceLinks: false
       volumes:
       - name: secrets-git
