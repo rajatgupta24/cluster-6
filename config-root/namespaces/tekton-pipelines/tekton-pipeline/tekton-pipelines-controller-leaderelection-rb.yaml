@@ -12,9 +12,9 @@ metadata:
   annotations:
     meta.helm.sh/release-name: 'tekton-pipeline'
 subjects:
-  - kind: ServiceAccount
-    name: tekton-pipelines-controller
-    namespace: tekton-pipelines
+- kind: ServiceAccount
+  name: tekton-pipelines-controller
+  namespace: tekton-pipelines
 roleRef:
   kind: Role
   name: tekton-pipelines-leader-election

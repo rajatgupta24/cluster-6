@@ -26,15 +26,15 @@ metadata:
   annotations:
     meta.helm.sh/release-name: 'tekton-pipeline'
 rules:
-  - apiGroups: [""]
-    resources: ["configmaps"]
-    verbs: ["list", "watch"]
-  # The controller needs access to these configmaps for logging information and runtime configuration.
-  - apiGroups: [""]
-    resources: ["configmaps"]
-    verbs: ["get"]
-    resourceNames: ["config-logging", "config-observability", "config-artifact-bucket", "config-artifact-pvc", "feature-flags", "config-leader-election", "config-registry-cert"]
-  - apiGroups: ["policy"]
-    resources: ["podsecuritypolicies"]
-    resourceNames: ["tekton-pipelines"]
-    verbs: ["use"]
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["list", "watch"]
+# The controller needs access to these configmaps for logging information and runtime configuration.
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["get"]
+  resourceNames: ["config-logging", "config-observability", "config-artifact-bucket", "config-artifact-pvc", "feature-flags", "config-leader-election", "config-registry-cert"]
+- apiGroups: ["policy"]
+  resources: ["podsecuritypolicies"]
+  resourceNames: ["tekton-pipelines"]
+  verbs: ["use"]

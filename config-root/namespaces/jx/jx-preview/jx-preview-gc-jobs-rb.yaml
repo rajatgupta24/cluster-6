@@ -13,5 +13,5 @@ roleRef:
   kind: Role
   name: jx-preview-gc-jobs
 subjects:
-  - kind: ServiceAccount
-    name: jx-preview-gc-jobs
+- kind: ServiceAccount
+  name: jx-preview-gc-jobs

@@ -13,6 +13,6 @@ roleRef:
   kind: Role
   name: gcpods
 subjects:
-  - kind: ServiceAccount
-    name: jx-gcpods
-    namespace: jx
+- kind: ServiceAccount
+  name: jx-gcpods
+  namespace: jx

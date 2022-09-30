@@ -9,32 +9,32 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
-  - apiGroups:
-      - ""
-    resources:
-      - namespaces
-    verbs:
-      - get
-      - list
-      - watch
-      - delete
-  - apiGroups:
-      - ""
-    resources:
-      - secrets
-    verbs:
-      - get
-      - list
-      - watch
-  - apiGroups:
-      - preview.jenkins.io
-    resources:
-      - previews
-    verbs:
-      - create
-      - delete
-      - list
-      - update
-      - get
-      - watch
-      - patch
+- apiGroups:
+  - ""
+  resources:
+  - namespaces
+  verbs:
+  - get
+  - list
+  - watch
+  - delete
+- apiGroups:
+  - ""
+  resources:
+  - secrets
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - preview.jenkins.io
+  resources:
+  - previews
+  verbs:
+  - create
+  - delete
+  - list
+  - update
+  - get
+  - watch
+  - patch

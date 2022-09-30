@@ -13,35 +13,35 @@ metadata:
   annotations:
     meta.helm.sh/release-name: 'jx-pipelines-visualizer'
 rules:
-  - apiGroups:
-      - jenkins.io
-    resources:
-      - pipelineactivities
-      - pipelinestructures
-    verbs:
-      - list
-      - watch
-      - get
-  - apiGroups:
-      - tekton.dev
-    resources:
-      - pipelineruns
-      - pipelines
-    verbs:
-      - list
-      - watch
-      - get
-  - apiGroups:
-      - ""
-    resources:
-      - pods
-    verbs:
-      - list
-      - watch
-      - get
-  - apiGroups:
-      - ""
-    resources:
-      - pods/log
-    verbs:
-      - get
+- apiGroups:
+  - jenkins.io
+  resources:
+  - pipelineactivities
+  - pipelinestructures
+  verbs:
+  - list
+  - watch
+  - get
+- apiGroups:
+  - tekton.dev
+  resources:
+  - pipelineruns
+  - pipelines
+  verbs:
+  - list
+  - watch
+  - get
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  verbs:
+  - list
+  - watch
+  - get
+- apiGroups:
+  - ""
+  resources:
+  - pods/log
+  verbs:
+  - get

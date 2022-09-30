@@ -39,7 +39,7 @@ spec:
     kind: Deployment
     name: tekton-pipelines-webhook
   metrics:
-    - type: Resource
-      resource:
-        name: cpu
-        targetAverageUtilization: 100
+  - type: Resource
+    resource:
+      name: cpu
+      targetAverageUtilization: 100

@@ -8,13 +8,13 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'cluster'
 rules:
-  - apiGroups:
-      - '*'
-    resources:
-      - '*'
-    verbs:
-      - '*'
-  - nonResourceURLs:
-      - '*'
-    verbs:
-      - '*'
+- apiGroups:
+  - '*'
+  resources:
+  - '*'
+  verbs:
+  - '*'
+- nonResourceURLs:
+  - '*'
+  verbs:
+  - '*'

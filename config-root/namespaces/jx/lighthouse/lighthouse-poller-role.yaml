@@ -9,12 +9,12 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 rules:
-  - apiGroups:
-      - ""
-    resources:
-      - namespaces
-      - configmaps
-    verbs:
-      - get
-      - list
-      - watch
+- apiGroups:
+  - ""
+  resources:
+  - namespaces
+  - configmaps
+  verbs:
+  - get
+  - list
+  - watch

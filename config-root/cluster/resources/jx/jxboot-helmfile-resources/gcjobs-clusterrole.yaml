@@ -8,11 +8,11 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'cluster'
 rules:
-  - apiGroups:
-      - batch
-    resources:
-      - jobs
-    verbs:
-      - get
-      - delete
-      - list
+- apiGroups:
+  - batch
+  resources:
+  - jobs
+  verbs:
+  - get
+  - delete
+  - list

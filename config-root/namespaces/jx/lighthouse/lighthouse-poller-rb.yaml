@@ -13,5 +13,5 @@ roleRef:
   kind: Role
   name: lighthouse-poller
 subjects:
-  - kind: ServiceAccount
-    name: lighthouse-poller
+- kind: ServiceAccount
+  name: lighthouse-poller

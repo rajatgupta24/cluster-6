@@ -12,25 +12,25 @@ metadata:
   annotations:
     meta.helm.sh/release-name: 'tekton-pipeline'
 rules:
-  - apiGroups: [""]
-    resources: ["configmaps"]
-    verbs: ["list", "watch"]
-  # The webhook needs access to these configmaps for logging information.
-  - apiGroups: [""]
-    resources: ["configmaps"]
-    verbs: ["get"]
-    resourceNames: ["config-logging", "config-observability", "config-leader-election", "feature-flags"]
-  - apiGroups: [""]
-    resources: ["secrets"]
-    verbs: ["list", "watch"]
-  # The webhook daemon makes a reconciliation loop on webhook-certs. Whenever
-  # the secret changes it updates the webhook configurations with the certificates
-  # stored in the secret.
-  - apiGroups: [""]
-    resources: ["secrets"]
-    verbs: ["get", "update"]
-    resourceNames: ["webhook-certs"]
-  - apiGroups: ["policy"]
-    resources: ["podsecuritypolicies"]
-    resourceNames: ["tekton-pipelines"]
-    verbs: ["use"]
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["list", "watch"]
+# The webhook needs access to these configmaps for logging information.
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["get"]
+  resourceNames: ["config-logging", "config-observability", "config-leader-election", "feature-flags"]
+- apiGroups: [""]
+  resources: ["secrets"]
+  verbs: ["list", "watch"]
+# The webhook daemon makes a reconciliation loop on webhook-certs. Whenever
+# the secret changes it updates the webhook configurations with the certificates
+# stored in the secret.
+- apiGroups: [""]
+  resources: ["secrets"]
+  verbs: ["get", "update"]
+  resourceNames: ["webhook-certs"]
+- apiGroups: ["policy"]
+  resources: ["podsecuritypolicies"]
+  resourceNames: ["tekton-pipelines"]
+  verbs: ["use"]

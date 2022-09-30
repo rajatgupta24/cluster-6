@@ -11,11 +11,11 @@ metadata:
   annotations:
     meta.helm.sh/release-name: 'tekton-pipeline'
 subjects:
-  # Giving all system:authenticated users the access of the
-  # ConfigMap which contains version information.
-  - kind: Group
-    name: system:authenticated
-    apiGroup: rbac.authorization.k8s.io
+# Giving all system:authenticated users the access of the
+# ConfigMap which contains version information.
+- kind: Group
+  name: system:authenticated
+  apiGroup: rbac.authorization.k8s.io
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role

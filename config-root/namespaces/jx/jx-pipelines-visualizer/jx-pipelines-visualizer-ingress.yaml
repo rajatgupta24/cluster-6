@@ -19,12 +19,12 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard.jx.change.me
-      http:
-        paths:
-          - pathType: ImplementationSpecific
-            backend:
-              service:
-                name: jx-pipelines-visualizer
-                port:
-                  name: http
+  - host: dashboard.jx.change.me
+    http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: jx-pipelines-visualizer
+            port:
+              name: http

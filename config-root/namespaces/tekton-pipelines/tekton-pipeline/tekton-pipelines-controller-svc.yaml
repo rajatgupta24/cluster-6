@@ -20,15 +20,15 @@ metadata:
     meta.helm.sh/release-name: 'tekton-pipeline'
 spec:
   ports:
-    - name: http-metrics
-      port: 9090
-      protocol: TCP
-      targetPort: 9090
-    - name: http-profiling
-      port: 8008
-      targetPort: 8008
-    - name: probes
-      port: 8080
+  - name: http-metrics
+    port: 9090
+    protocol: TCP
+    targetPort: 9090
+  - name: http-profiling
+    port: 8008
+    targetPort: 8008
+  - name: probes
+    port: 8080
   selector:
     app.kubernetes.io/name: controller
     app.kubernetes.io/component: controller

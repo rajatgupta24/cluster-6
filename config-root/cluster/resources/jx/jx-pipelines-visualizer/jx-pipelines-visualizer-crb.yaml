@@ -17,6 +17,6 @@ roleRef:
   kind: ClusterRole
   name: jx-pipelines-visualizer
 subjects:
-  - kind: ServiceAccount
-    name: jx-pipelines-visualizer
-    namespace: jx
+- kind: ServiceAccount
+  name: jx-pipelines-visualizer
+  namespace: jx

@@ -18,21 +18,21 @@
 	    <tr>
 	      <td>jxboot-helmfile-resources</td>
 	      <td title='A Helm chart for the resources for JX Boot'><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources</a></td>
-	      <td>1.1.182</td>
+	      <td>1.1.210</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
     <tr>
 	      <td>jx-preview</td>
 	      <td title='This chart installs the jx-preview CRD and garbagecollection job '><a href='https://github.com/jenkins-x-plugins/jx-preview'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview</a></td>
-	      <td>0.0.221</td>
+	      <td>0.0.224</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
     <tr>
 	      <td>lighthouse</td>
 	      <td title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '><a href='https://github.com/jenkins-x/lighthouse'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse</a></td>
-	      <td>1.9.0</td>
+	      <td>1.9.7</td>
 	      <td></td>
 	      <td></td>
 	    </tr>

@@ -13,6 +13,6 @@ roleRef:
   kind: Role
   name: jx-build-controller
 subjects:
-  - kind: ServiceAccount
-    name: jenkins-x-controllerbuild
-    namespace: jx
+- kind: ServiceAccount
+  name: jenkins-x-controllerbuild
+  namespace: jx

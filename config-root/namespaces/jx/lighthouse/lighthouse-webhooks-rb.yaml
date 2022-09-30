@@ -13,5 +13,5 @@ roleRef:
   kind: Role
   name: lighthouse-webhooks
 subjects:
-  - kind: ServiceAccount
-    name: lighthouse-webhooks
+- kind: ServiceAccount
+  name: lighthouse-webhooks

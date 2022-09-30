@@ -12,11 +12,11 @@ metadata:
   annotations:
     meta.helm.sh/release-name: 'tekton-pipeline'
 webhooks:
-  - admissionReviewVersions: ["v1"]
-    clientConfig:
-      service:
-        name: tekton-pipelines-webhook
-        namespace: tekton-pipelines
-    failurePolicy: Fail
-    sideEffects: None
-    name: webhook.pipeline.tekton.dev
+- admissionReviewVersions: ["v1"]
+  clientConfig:
+    service:
+      name: tekton-pipelines-webhook
+      namespace: tekton-pipelines
+  failurePolicy: Fail
+  sideEffects: None
+  name: webhook.pipeline.tekton.dev

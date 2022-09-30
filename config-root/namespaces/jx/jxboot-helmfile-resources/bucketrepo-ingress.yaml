@@ -11,12 +11,12 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   rules:
-    - http:
-        paths:
-          - pathType: ImplementationSpecific
-            backend:
-              service:
-                name: bucketrepo
-                port:
-                  number: 80
-      host: bucketrepo.jx.change.me
+  - http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: bucketrepo
+            port:
+              number: 80
+    host: bucketrepo.jx.change.me

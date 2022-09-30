@@ -12,6 +12,6 @@ roleRef:
   kind: ClusterRole
   name: gcjobs
 subjects:
-  - kind: ServiceAccount
-    name: jx-gcjobs
-    namespace: jx
+- kind: ServiceAccount
+  name: jx-gcjobs
+  namespace: jx

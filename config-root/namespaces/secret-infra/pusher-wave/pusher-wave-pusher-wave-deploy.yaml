@@ -30,10 +30,10 @@ spec:
         heritage: "Helm"
     spec:
       containers:
-        - image: "quay.io/wave-k8s/wave:v0.5.0"
-          imagePullPolicy: IfNotPresent
-          name: pusher-wave-pusher-wave
-          args:
+      - image: "quay.io/wave-k8s/wave:v0.5.0"
+        imagePullPolicy: IfNotPresent
+        name: pusher-wave-pusher-wave
+        args:
       securityContext:
         runAsNonRoot: true
         runAsUser: 1000

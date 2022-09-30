@@ -13,5 +13,5 @@ roleRef:
   kind: Role
   name: lighthouse-gc-jobs
 subjects:
-  - kind: ServiceAccount
-    name: lighthouse-gc-jobs
+- kind: ServiceAccount
+  name: lighthouse-gc-jobs

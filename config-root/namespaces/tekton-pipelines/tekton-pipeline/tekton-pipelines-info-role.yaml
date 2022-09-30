@@ -11,11 +11,11 @@ metadata:
   annotations:
     meta.helm.sh/release-name: 'tekton-pipeline'
 rules:
-  # All system:authenticated users needs to have access
-  # of the pipelines-info ConfigMap even if they don't
-  # have access to the other resources present in the
-  # installed namespace.
-  - apiGroups: [""]
-    resources: ["configmaps"]
-    resourceNames: ["pipelines-info"]
-    verbs: ["get"]
+# All system:authenticated users needs to have access
+# of the pipelines-info ConfigMap even if they don't
+# have access to the other resources present in the
+# installed namespace.
+- apiGroups: [""]
+  resources: ["configmaps"]
+  resourceNames: ["pipelines-info"]
+  verbs: ["get"]

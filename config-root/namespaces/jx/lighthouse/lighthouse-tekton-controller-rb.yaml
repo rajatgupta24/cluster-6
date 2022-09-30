@@ -13,5 +13,5 @@ roleRef:
   kind: Role
   name: lighthouse-tekton-controller
 subjects:
-  - kind: ServiceAccount
-    name: lighthouse-tekton-controller
+- kind: ServiceAccount
+  name: lighthouse-tekton-controller

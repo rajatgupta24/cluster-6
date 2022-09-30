@@ -26,21 +26,21 @@ metadata:
   annotations:
     meta.helm.sh/release-name: 'tekton-pipeline'
 rules:
-  - apiGroups:
-      - tekton.dev
-    resources:
-      - tasks
-      - taskruns
-      - pipelines
-      - pipelineruns
-      - pipelineresources
-      - conditions
-    verbs:
-      - create
-      - delete
-      - deletecollection
-      - get
-      - list
-      - patch
-      - update
-      - watch
+- apiGroups:
+  - tekton.dev
+  resources:
+  - tasks
+  - taskruns
+  - pipelines
+  - pipelineruns
+  - pipelineresources
+  - conditions
+  verbs:
+  - create
+  - delete
+  - deletecollection
+  - get
+  - list
+  - patch
+  - update
+  - watch

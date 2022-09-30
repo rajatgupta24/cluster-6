@@ -15,9 +15,9 @@ metadata:
   namespace: jx
 spec:
   ports:
-    - name: http
-      port: 80
-      targetPort: http
+  - name: http
+    port: 80
+    targetPort: http
   selector:
     app.kubernetes.io/name: jx-pipelines-visualizer
     app.kubernetes.io/instance: "jx-pipelines-visualizer"

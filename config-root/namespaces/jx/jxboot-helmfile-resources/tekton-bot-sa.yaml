@@ -9,7 +9,7 @@ metadata:
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 secrets:
-  - name: tekton-container-registry-auth
-  - name: tekton-git
+- name: tekton-container-registry-auth
+- name: tekton-git
 imagePullSecrets:
-  - name: "tekton-container-registry-auth"
+- name: "tekton-container-registry-auth"

@@ -11,12 +11,12 @@ metadata:
   annotations:
     meta.helm.sh/release-name: 'jxboot-helmfile-resources'
 rules:
-  - apiGroups:
-      - jenkins.io
-      - comcast.github.io
-    resources:
-      - "*"
-    verbs:
-      - get
-      - list
-      - watch
+- apiGroups:
+  - jenkins.io
+  - comcast.github.io
+  resources:
+  - "*"
+  verbs:
+  - get
+  - list
+  - watch

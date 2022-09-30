@@ -12,6 +12,6 @@ roleRef:
   kind: ClusterRole
   name: jx-build-controller-jx
 subjects:
-  - kind: ServiceAccount
-    name: jenkins-x-controllerbuild
-    namespace: jx
+- kind: ServiceAccount
+  name: jenkins-x-controllerbuild
+  namespace: jx

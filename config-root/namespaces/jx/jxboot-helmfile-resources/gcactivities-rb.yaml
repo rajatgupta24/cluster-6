@@ -13,6 +13,6 @@ roleRef:
   kind: Role
   name: gcactivities
 subjects:
-  - kind: ServiceAccount
-    name: jx-gcactivities
-    namespace: jx
+- kind: ServiceAccount
+  name: jx-gcactivities
+  namespace: jx

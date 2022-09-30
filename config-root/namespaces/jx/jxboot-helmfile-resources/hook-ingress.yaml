@@ -11,13 +11,13 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   rules:
-    - http:
-        paths:
-          - pathType: ImplementationSpecific
-            backend:
-              service:
-                name: hook
-                port:
-                  number: 80
-            path: "/hook"
-      host: 96af-2405-201-4015-3077-e4ff-ddc2-abc3-dee0.ngrok.io
+  - http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: hook
+            port:
+              number: 80
+        path: "/hook"
+    host: 96af-2405-201-4015-3077-e4ff-ddc2-abc3-dee0.ngrok.io

@@ -20,18 +20,18 @@ metadata:
     meta.helm.sh/release-name: 'tekton-pipeline'
 spec:
   ports:
-    # Define metrics and profiling for them to be accessible within service meshes.
-    - name: http-metrics
-      port: 9090
-      targetPort: 9090
-    - name: http-profiling
-      port: 8008
-      targetPort: 8008
-    - name: https-webhook
-      port: 443
-      targetPort: 8443
-    - name: probes
-      port: 8080
+  # Define metrics and profiling for them to be accessible within service meshes.
+  - name: http-metrics
+    port: 9090
+    targetPort: 9090
+  - name: http-profiling
+    port: 8008
+    targetPort: 8008
+  - name: https-webhook
+    port: 443
+    targetPort: 8443
+  - name: probes
+    port: 8080
   selector:
     app.kubernetes.io/name: webhook
     app.kubernetes.io/component: webhook
