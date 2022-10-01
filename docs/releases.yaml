@@ -57,12 +57,12 @@
     - https://github.com/jenkins-x-plugins/jx-build-controller
     version: 0.4.0
   - apiVersion: v1
-    appVersion: 0.0.12
+    appVersion: 0.0.15
     description: Official Jenkins X UI
-    firstDeployed: "2022-09-30T12:48:55Z"
+    firstDeployed: "2022-10-01T16:13:35Z"
     home: https://github.com/jenkins-x/jx-ui
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-09-30T12:48:55Z"
+    lastDeployed: "2022-10-01T16:13:35Z"
     name: jx-ui
     releaseName: jx-ui
     repositoryName: jxgh
@@ -70,7 +70,7 @@
     resourcePath: config-root/namespaces/jx/jx-ui
     sources:
     - https://github.com/jenkins-x/jx-ui
-    version: 0.0.12
+    version: 0.0.15
 - namespace: secret-infra
   path: helmfiles/secret-infra/helmfile.yaml
   releases:

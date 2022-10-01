@@ -6,8 +6,8 @@ metadata:
   labels:
     app.kubernetes.io/name: jx-ui
     app.kubernetes.io/instance: "jx-ui"
-    helm.sh/chart: jx-ui-0.0.12
-    app.kubernetes.io/version: "0.0.12"
+    helm.sh/chart: jx-ui-0.0.15
+    app.kubernetes.io/version: "0.0.15"
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
@@ -26,23 +26,21 @@ spec:
       labels:
         app.kubernetes.io/name: jx-ui
         app.kubernetes.io/instance: "jx-ui"
-        helm.sh/chart: jx-ui-0.0.12
-        app.kubernetes.io/version: "0.0.12"
+        helm.sh/chart: jx-ui-0.0.15
+        app.kubernetes.io/version: "0.0.15"
         app.kubernetes.io/managed-by: "Helm"
     spec:
       containers:
       - name: jx-ui
-        image: "ghcr.io/jenkins-x/jx-ui:0.0.12"
-        args:
-        - -resync-interval
-        - 60s
-        - -pipeline-trace-url-template
-        - http://grafana.jx-observability.change.me/explore?left=%5B%22now%22,%22now%22,%22Tempo%22,%7B%22query%22:%22{{.TraceID}}%22%7D%5D
-        - -log-level
-        - INFO
+        image: "ghcr.io/jenkins-x/jx-ui:0.0.15"
+        env:
+        - name: XDG_CONFIG_HOME
+          value: /home/jenkins
+        - name: GIT_SECRET_MOUNT_PATH
+          value: /secrets/git
         ports:
         - name: http
-          containerPort: 8080
+          containerPort: 9200
         livenessProbe:
           tcpSocket:
             port: http

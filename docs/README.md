@@ -46,7 +46,7 @@
     <tr>
 	      <td>jx-ui</td>
 	      <td title='Official Jenkins X UI'><a href='https://github.com/jenkins-x/jx-ui'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-ui</a></td>
-	      <td>0.0.12</td>
+	      <td>0.0.15</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/jx-ui'>source</a></td>
 	    </tr>

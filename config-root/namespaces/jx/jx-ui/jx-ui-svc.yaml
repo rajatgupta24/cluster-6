@@ -6,8 +6,8 @@ metadata:
   labels:
     app.kubernetes.io/name: jx-ui
     app.kubernetes.io/instance: "jx-ui"
-    helm.sh/chart: jx-ui-0.0.12
-    app.kubernetes.io/version: "0.0.12"
+    helm.sh/chart: jx-ui-0.0.15
+    app.kubernetes.io/version: "0.0.15"
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
