@@ -42,7 +42,7 @@ releases:
   - ../../versionStream/charts/jxgh/jx-build-controller/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jxgh/jx-ui
-  version: 0.0.12
+  version: 0.0.15
   name: jx-ui
   values:
   - ../../versionStream/charts/jxgh/jx-ui/values.yaml.gotmpl
