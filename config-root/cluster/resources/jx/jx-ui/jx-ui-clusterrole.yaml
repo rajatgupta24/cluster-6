@@ -6,8 +6,8 @@ metadata:
   labels:
     app.kubernetes.io/name: jx-ui
     app.kubernetes.io/instance: "jx-ui"
-    helm.sh/chart: jx-ui-0.0.15
-    app.kubernetes.io/version: "0.0.15"
+    helm.sh/chart: jx-ui-0.0.17
+    app.kubernetes.io/version: "0.0.17"
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'cluster'
   annotations:
@@ -18,6 +18,7 @@ rules:
   resources:
   - pipelineactivities
   - pipelinestructures
+  - sourcerepositories
   verbs:
   - list
   - watch
@@ -31,6 +32,7 @@ rules:
   - list
   - watch
   - get
+  - update
 - apiGroups:
   - ""
   resources:

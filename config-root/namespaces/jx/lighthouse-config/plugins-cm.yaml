@@ -39,7 +39,6 @@ data:
       - config-updater
       - approve
       - assign
-      - blunderbuss
       - help
       - hold
       - lgtm
@@ -48,14 +47,12 @@ data:
       - size
       - trigger
       - wip
-      - heart
       - cat
       - dog
       - pony
       rajatgupta24/quickstart-6:
       - approve
       - assign
-      - blunderbuss
       - help
       - hold
       - lgtm
@@ -64,7 +61,6 @@ data:
       - size
       - trigger
       - wip
-      - heart
       - cat
       - dog
       - pony
