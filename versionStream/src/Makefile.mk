@@ -222,7 +222,7 @@ verify: dev-ns verify-ingress $(GITOPS_WEBHOOK_UPDATE)
 
 .PHONY: gitops-webhook-update
 gitops-webhook-update:
-	jx gitops webhook update --warn-on-fail --fast
+	jx gitops webhook update --warn-on-fail
 
 .PHONY: no-gitops-webhook-update
 no-gitops-webhook-update:
