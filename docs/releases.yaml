@@ -57,20 +57,21 @@
     - https://github.com/jenkins-x-plugins/jx-build-controller
     version: 0.4.0
   - apiVersion: v1
-    appVersion: 0.0.17
-    description: Official Jenkins X UI
-    firstDeployed: "2022-10-06T12:13:53Z"
-    home: https://github.com/jenkins-x/jx-ui
+    appVersion: 1.8.2
+    description: Web UI for Jenkins X, with a clear goal - visualize the pipelines
+      - and their logs.
+    firstDeployed: "2022-10-16T16:42:25Z"
+    home: https://github.com/jenkins-x/jx-pipelines-visualizer
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-10-06T12:13:53Z"
-    name: jx-ui
-    releaseName: jx-ui
+    lastDeployed: "2022-10-16T16:42:25Z"
+    name: jx-pipelines-visualizer
+    releaseName: jx-v
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
-    resourcePath: config-root/namespaces/jx/jx-ui
+    resourcePath: config-root/namespaces/jx/jx-pipelines-visualizer-jx-v
     sources:
-    - https://github.com/jenkins-x/jx-ui
-    version: 0.0.17
+    - https://github.com/jenkins-x/jx-pipelines-visualizer
+    version: 1.8.2
 - namespace: secret-infra
   path: helmfiles/secret-infra/helmfile.yaml
   releases:

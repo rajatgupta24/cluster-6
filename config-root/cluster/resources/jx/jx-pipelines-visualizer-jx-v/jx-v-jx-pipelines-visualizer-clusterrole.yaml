@@ -1,24 +1,23 @@
-# Source: jx-ui/templates/rbac.yaml
+# Source: jx-pipelines-visualizer/templates/rbac.yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: jx-ui
+  name: jx-v-jx-pipelines-visualizer
   labels:
-    app.kubernetes.io/name: jx-ui
-    app.kubernetes.io/instance: "jx-ui"
-    helm.sh/chart: jx-ui-0.0.17
-    app.kubernetes.io/version: "0.0.17"
+    app.kubernetes.io/name: jx-pipelines-visualizer
+    app.kubernetes.io/instance: "jx-v"
+    helm.sh/chart: jx-pipelines-visualizer-1.8.2
+    app.kubernetes.io/version: "1.8.2"
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'cluster'
   annotations:
-    meta.helm.sh/release-name: 'jx-ui'
+    meta.helm.sh/release-name: 'jx-v'
 rules:
 - apiGroups:
   - jenkins.io
   resources:
   - pipelineactivities
   - pipelinestructures
-  - sourcerepositories
   verbs:
   - list
   - watch
@@ -32,7 +31,6 @@ rules:
   - list
   - watch
   - get
-  - update
 - apiGroups:
   - ""
   resources:
