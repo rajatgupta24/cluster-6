@@ -41,11 +41,11 @@ releases:
   values:
   - ../../versionStream/charts/jxgh/jx-build-controller/values.yaml.gotmpl
   - jx-values.yaml
-- chart: jxgh/jx-pipelines-visualizer
-  version: 1.8.2
-  name: jx-v
+- chart: jxgh/jx-ui
+  version: 0.0.19
+  name: jx-ui
   values:
-  - ../../versionStream/charts/jxgh/jx-pipelines-visualizer/values.yaml.gotmpl
+  - ../../versionStream/charts/jxgh/jx-ui/values.yaml.gotmpl
   - jx-values.yaml
 templates: {}
 renderedvalues: {}
