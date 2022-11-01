@@ -1,0 +1,16 @@
+# Source: jx-ui/templates/rbac.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jx-ui
+  labels:
+    app.kubernetes.io/name: jx-ui
+    app.kubernetes.io/instance: "jx-ui"
+    helm.sh/chart: jx-ui-0.0.19
+    app.kubernetes.io/version: "0.0.19"
+    app.kubernetes.io/managed-by: "Helm"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    installed-by: jenkins-x
+    meta.helm.sh/release-name: 'jx-ui'
+  namespace: jx
