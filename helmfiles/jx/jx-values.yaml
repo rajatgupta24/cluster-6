@@ -38,7 +38,7 @@ jxRequirements:
     repository: cluster-6
   - key: staging
   ingress:
-    domain: change.me
+    domain: change.m
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .jx.
