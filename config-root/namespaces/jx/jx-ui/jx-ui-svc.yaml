@@ -14,10 +14,12 @@ metadata:
     meta.helm.sh/release-name: 'jx-ui'
   namespace: jx
 spec:
+  type: NodePort
   ports:
   - name: http
     port: 80
-    targetPort: http
+    targetPort: 9200
+    nodePort: 30007
   selector:
     app.kubernetes.io/name: jx-ui
     app.kubernetes.io/instance: "jx-ui"
